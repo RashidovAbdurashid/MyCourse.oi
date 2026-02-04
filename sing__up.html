@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="/fonts/style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav__container container">
+        <div class="navbar__logo">
+          <a href="index.html"
+            ><img src="/assets/Logo.png" alt="Caribou Logo"
+          /></a>
+        </div>
+
+        <div class="nav__input_box">
+          <input
+            class="nav__input"
+            type="text"
+            placeholder="Search for course"
+          />
+          <img nav__input_img src="/assets/search_24px.png" alt="" />
+        </div>
+
+        <div class="nav__button">
+          <p>Become Instructor</p>
+          <a href="account.html">
+            <img src="assets/shopping_cart_24px.png" alt=""
+          /></a>
+          <img src="./assets/notifications_none_24px.png" alt="" />
+          <a href="sing__up.html">
+            <img
+              style="width: 36px; height: 36px"
+              src="./assets/Square.png"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="account">
+      <h1>My Account</h1>
+
+      <nav class="tabs">
+        <a class="active">Profile</a>
+        <a>Personalisation</a>
+        <a>Account</a>
+        <a>Payment Methods</a>
+        <a>Notifications</a>
+        <a>Privacy</a>
+      </nav>
+
+      <section class="profile-card">
+        <div class="profile-avatar">
+          <img src="./assets/Square.png" alt="" />
+        </div>
+
+        <form class="profile-form" id="profileForm">
+          <div class="form-group">
+            <label>First Name</label>
+            <input
+              type="text"
+              id="firstName"
+              placeholder="Jonathan"
+              value="Jonathan"
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" id="lastName" placeholder="Doe" value="Doe" />
+          </div>
+
+          <div class="form-group">
+            <label>Headline</label>
+            <input type="text" value="Headline" />
+          </div>
+
+          <div class="form-group">
+            <label>Language</label>
+            <select>
+              <option>English</option>
+              <option>Uzbek</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Link</label>
+            <input
+              type="text"
+              placeholder="www.kitani.io"
+              value="www.kitani.oi"
+            />
+          </div>
+
+          <button class="save-btn" type="submit">Save</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__top footer__container">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="/assets/Logoee.png" alt="Caribou Logo" />
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <ul>
+            <li><a href="#">Web Programming</a></li>
+            <li><a href="#">Mobile Programming</a></li>
+            <li><a href="#">Java Beginner</a></li>
+            <li><a href="#">PHP Beginner</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <ul>
+            <li><a href="#">Adobe Illustrator</a></li>
+            <li><a href="#">Adobe Photoshop</a></li>
+            <li><a href="#">Design Logo</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <ul>
+            <li><a href="#">Writing Course</a></li>
+            <li><a href="#">Photography</a></li>
+            <li><a href="#">Video Making</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <p class="copyright">
+            Copyright © MyCourse.io 2024. All Rights Reserved
+          </p>
+
+          <div class="footer__socials">
+            <a href="#"
+              ><i class="fab fa-twitter"
+                ><img src="./assets/Twitter.png" alt="" /></i
+            ></a>
+            <a href="#"
+              ><i class="fab fa-instagram"
+                ><img src="./assets/Instagram.png" alt="" /></i
+            ></a>
+            <a href="#"
+              ><i class="fab fa-facebook-f"
+                ><img src="./assets/Facebook.png" alt="" /></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1250px;
+}
+
+button,
+.btn,
+.find__button,
+.nav_signup,
+.nav_login,
+.join__left button,
+.get__container button,
+.save-btn {
+  transition: all 0.25s ease;
+}
+
+button:hover,
+.btn:hover,
+.find__button:hover,
+.nav_signup:hover,
+.nav_login:hover,
+.join__left button:hover,
+.get__container button:hover,
+.save-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  filter: brightness(0.95);
+}
+
+button:active,
+.btn:active,
+.find__button:active,
+.nav_signup:active,
+.nav_login:active,
+.join__left button:active,
+.get__container button:active,
+.save-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+button:hover {
+  letter-spacing: 0.5px;
+}

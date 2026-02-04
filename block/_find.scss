@@ -1,0 +1,84 @@
+.find {
+  position: relative;
+
+  &__container {
+    position: absolute;
+    left: 19%;
+    top: -85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 30px 0;
+    width: 1200px;
+    height: 170px;
+    background: #ffffff;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 23px;
+  }
+
+  &__h2 {
+    width: 273px;
+    height: 30px;
+    font-family: "Ubuntu";
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    padding-bottom: 50px;
+  }
+
+  &__inpud {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__skills {
+    width: 389px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 0 20px;
+    font-size: 16px;
+    outline: none;
+  }
+  &__cateries {
+    width: 248px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 0 20px;
+    font-size: 16px;
+    outline: none;
+  }
+
+  &__topic {
+    width: 248px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 0 20px;
+    font-size: 16px;
+    outline: none;
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px 24px;
+    gap: 10px;
+    width: 179px;
+    height: 50px;
+    background: #3dcbb1;
+    border-radius: 18px;
+    cursor: pointer;
+    border: none;
+    flex: none;
+    order: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+  }
+}

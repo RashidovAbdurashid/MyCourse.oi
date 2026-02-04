@@ -1,0 +1,200 @@
+$primary: #27d3b5;
+$text: #1f2d3d;
+$muted: #7b8a97;
+$bg: #f4f7fb;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: $bg;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.modal {
+  transform: translateY(30px);
+  transition: 0.3s;
+
+  .overlay.active & {
+    transform: translateY(0);
+  }
+}
+
+.password-group {
+  position: relative;
+
+  .toggle-pass {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 14px;
+    color: $muted;
+  }
+}
+
+.modal {
+  width: 920px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 20px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+
+  &__left {
+    background-image: url(/assets/Thumbbbnail.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .designer {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: white;
+
+      img {
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+      }
+
+      h4 {
+        margin: 0;
+        font-size: 14px;
+      }
+
+      span {
+        font-size: 12px;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__right {
+    padding: 50px 45px;
+    position: relative;
+  }
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border: none;
+  background: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: $muted;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: $muted;
+  margin: 15px 0 25px;
+}
+
+.form {
+  .input-group {
+    margin-bottom: 15px;
+
+    input {
+      width: 100%;
+      padding: 14px;
+      border-radius: 10px;
+      border: 1px solid #e3e8ef;
+      font-size: 14px;
+      outline: none;
+
+      &:focus {
+        border-color: $primary;
+      }
+    }
+  }
+}
+
+.btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: $primary;
+  color: white;
+  margin-top: 10px;
+}
+
+.divider {
+  text-align: center;
+  font-size: 13px;
+  color: $muted;
+  margin: 18px 0;
+}
+
+.social {
+  &.fb {
+    background: #3b5998;
+    color: white;
+  }
+  &.apple {
+    background: #000;
+    color: white;
+  }
+  &.google {
+    background: white;
+    border: 1px solid #e3e8ef;
+    color: $text;
+  }
+
+  img {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+}
+
+.signup {
+  text-align: center;
+  font-size: 13px;
+  color: $muted;
+  margin-top: 10px;
+
+  a {
+    color: $primary;
+    text-decoration: none;
+    font-weight: 600;
+  }
+}

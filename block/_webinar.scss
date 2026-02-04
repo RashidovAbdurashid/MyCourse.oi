@@ -1,0 +1,18 @@
+.webinar {
+  h1 {
+    font-family: "ubuntu", sans-serif;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+    padding: 40px 0;
+  }
+
+  &__container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 50px;
+    margin: auto;
+  }
+}

@@ -1,0 +1,94 @@
+.nav {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 1440px;
+    height: 60px;
+  }
+
+  &__button {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    p {
+      width: 134px;
+      font-family: "ubuntu", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+
+      color: #1b1b1b;
+    }
+  }
+
+  &__input_box {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+    width: 440px;
+    height: 40px;
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    border: none;
+  }
+
+  &__input {
+    width: 400px;
+    height: 40px;
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 0 16px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    border: none;
+    &::placeholder {
+      color: #999999;
+    }
+  }
+
+  &_login {
+    font-family: "Ubuntu";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+    border: 1px solid rgba(27, 27, 27, 0.9);
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: transparent;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+  }
+
+  &_signup {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+    cursor: pointer;
+    border: none;
+    background: #3dcbb1;
+    border-radius: 12px;
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #ffffff;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    a{
+      color: #ffffff;
+      text-decoration: none;}
+  }
+}

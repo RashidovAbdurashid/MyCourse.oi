@@ -1,0 +1,102 @@
+.footer {
+  background: #0f0f0f;
+  color: #aaa;
+  font-family: "Poppins", sans-serif;
+  margin: auto;
+  a {
+    color: #aaa;
+    text-decoration: none;
+    transition: 0.3s;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &__container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  &__top {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 60px 0 40px;
+  }
+
+  &__brand {
+    .footer__logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .logo-circle {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #2dd4bf, #06b6d4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+      }
+
+      .logo-text {
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+      }
+    }
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  &__col ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid #1f1f1f;
+    padding: 18px 0;
+  }
+
+  &__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+
+  .copyright {
+    font-size: 13px;
+    color: #777;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 18px;
+
+    a {
+      font-size: 16px;
+      color: #888;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
