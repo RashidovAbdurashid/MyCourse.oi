@@ -145,6 +145,69 @@ button:hover {
   color: #ffffff;
   text-decoration: none;
 }
+.nav__dropdown {
+  position: relative;
+  display: inline-block;
+}
+.nav__dropdown:hover .nav__menu, .nav__dropdown:focus-within .nav__menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.nav__profile img {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.nav__menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 260px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  padding: 16px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: 0.25s ease;
+  z-index: 9999;
+}
+.nav__user {
+  padding: 0 18px 12px;
+  border-bottom: 1px solid #eee;
+}
+.nav__name {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.nav__email {
+  font-size: 12px;
+  color: #777;
+}
+.nav__links {
+  list-style: none;
+  margin: 12px 0;
+  padding: 0;
+}
+.nav__links li {
+  padding: 10px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.nav__links li:hover {
+  background: #f5f5f5;
+}
+.nav__logout {
+  padding: 12px 18px 0;
+  color: #ff4d4f;
+  font-weight: 600;
+  cursor: pointer;
+}
 
 .intro__container {
   display: flex;
