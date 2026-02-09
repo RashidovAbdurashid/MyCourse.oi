@@ -55,3 +55,126 @@ button:active,
 button:hover {
   letter-spacing: 0.5px;
 }
+
+@media (max-width: 1250px) {
+  .container,
+  .nav__container,
+  .find__container,
+  .join__container,
+  .footer__container {
+    width: 95%;
+    max-width: 100%;
+  }
+
+  .nav__input_box,
+  .nav__input {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .find__container {
+    position: static;
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px auto;
+  }
+  .find__inpud {
+    flex-direction: column;
+    width: 100%;
+  }
+  .find__skills,
+  .find__cateries,
+  .find__topic,
+  .find__button {
+    width: 100% !important;
+  }
+
+  .footer__top {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .courses__container,
+  .filter__container {
+    flex-direction: column;
+  }
+  .filter__carts {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: auto;
+  }
+  .filter__sidebar {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro__title h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .intro__container {
+    height: 450px;
+  }
+
+  .join__container {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+  .join__left {
+    width: 100%;
+    padding: 30px;
+    align-items: center;
+  }
+  .join__left p {
+    width: 100%;
+    font-size: 18px;
+  }
+  .join__right {
+    display: none;
+  }
+
+  .modal {
+    grid-template-columns: 1fr;
+    width: 95%;
+  }
+  .modal__left {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav__button p {
+    display: none;
+  }
+
+  .filter__carts {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__top {
+    grid-template-columns: 1fr;
+  }
+
+  .design__container h2,
+  .courses h1,
+  .webinar h1 {
+    font-size: 24px;
+  }
+
+  .nav__menu {
+    width: 200px;
+  }
+
+  .nav_login,
+  .nav_signup {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+}
